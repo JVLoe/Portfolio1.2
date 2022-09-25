@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: 'MODERN TYPEWRITER', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #fffffe;
+}
+
+a:link, a:visited {
+    color: #e53170;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #ff8906;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    width: 93%;
+    margin: 20px 0 0 50px;
+    border-radius: 30px;
+    background-color: #0f0e17;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar-page-links-container {
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+    margin: 15px 5px 5px 15px;
+    text-transform: uppercase;
+}
+
+
+.name {
+    display: flex;
+    justify-content: end;
+    font-size: 2.7rem;
+    margin: 5px 5px 5px 0;
+    color: #e53170;
+}
+
+.padding-between-nav-main {
+    padding: 68px;
+}
+
+.about-section-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 50px 0 50px;
+    border-radius: 30px;
+    background-color: #0f0e17;
+}
+
+.about-section-header {
+    text-align: center;
+    font-size: 2.7rem;
+    color: #e53170;
+}
+
+.about-text {
+    text-align: justify;
+    padding-bottom: 100px;
+    color: #e53170;
+    font-size: 1.3rem;
+}
+
+span {
+    color: #ff8906;
+    font-size: 2rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0f0e17;
+    border-radius: 30px;
+    margin: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio-introduction-container {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #e53170;
+}
+
+.portfolio-header {
+    padding-top: 10px;
+    font-size: 2.5rem;
+    color: #e53170;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: #0f0e17;
+    border-radius: 30px;
+
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #e53170;
+}
+
+.project-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    transition: all ease-in-out .2s;
+    max-width: 500px;
+    height: 400px;
+}
+
+.project-image:hover {
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+.project-description-text {
+    color: #e53170;
+}
+
+.project-git-link-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 3rem;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.contact-container {
+    display: block;
+    background-color: #0f0e17;
+    border-radius: 30px;
+    margin: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.contact-title {
+    text-align: center;
+    width: 100%;
+    color: #e53170;
+}
+
+.contact-text {
+    text-align: center;
+    color: #e53170;
+}
+
+.contact-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 3rem;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copywrite-tag-container {
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+.copywrite-text {
+    color: #0f0e17;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        display: flex;
+    }
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .menu_links_container,
+    .top_contact_buttons_container {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 2rem;
+        padding-right: 50px;
+    }
+    .top_contact_buttons_container {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .project-description-text {
+        text-align: justify;
+    }
+    .project-description-text {
+        text-align: justify;
+    }
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-buttons-container {
+        font-size: 2rem;
+    }
+    .copywrite-tag-container {
+        font-size: 10px;
+        align-content: center;
+    }
+}
