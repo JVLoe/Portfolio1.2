@@ -2,18 +2,22 @@
     box-sizing: border-box;
     font-family: 'MODERN TYPEWRITER', sans-serif;
 }
+
 html {
     font-size: 16px;
     font-weight: bolder;
     background-image: url("./Assets/pexels-eberhard-grossgasteiger-2088205.jpg");
 }
+
 a:link, a:visited {
     color: #E84685FF;
     text-decoration: none;
 }
+
 a:hover, a:active {
     color: #7606ff;
 }
+
 nav {
     position: fixed;
     width: 100%;
@@ -23,6 +27,7 @@ nav {
     justify-content: space-between;
     z-index: 10;
 }
+
 .navbar-page-links-container {
     display: flex;
     gap: 15px;
@@ -30,6 +35,7 @@ nav {
     margin: 15px 5px 5px 15px;
     text-transform: uppercase;
 }
+
 .name {
     display: flex;
     justify-content: end;
@@ -37,15 +43,18 @@ nav {
     margin: 5px 5px 5px 0;
     color: #E84685FF;
 }
+
 .padding-between-nav-main {
     padding: 68px;
 }
+
 header {
     height: calc(100vh - 15em);
     padding: 4em;
     color: #000000;
     font-family: 'Anonymous Pro', monospace;
 }
+
 .line-1 {
     position: relative;
     top: 50%;
@@ -57,10 +66,12 @@ header {
     overflow: hidden;
     transform: translateY(-50%);
 }
+
 .anim-typewriter {
     animation: typewriter 5s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 @keyframes typewriter {
     from {
         width: 0;
@@ -69,6 +80,7 @@ header {
         width: 35em;
     }
 }
+
 @keyframes blinkTextCursor {
     from {
         border-right-color: #FFFFFFBF;
@@ -77,11 +89,13 @@ header {
         border-right-color: transparent;
     }
 }
+
 #about,
 #portfolio {
     z-index: 0;
     padding-top: 70px;
 }
+
 .about-section-container {
     display: flex;
     justify-content: center;
@@ -92,21 +106,27 @@ header {
     border-radius: 20px;
     background-color: #F6F3F38B;
 }
+
 .about-section-header {
     text-align: center;
     font-size: 2.7rem;
     color: #E84685FF;
 }
+
 .about-text {
     text-align: justify;
     padding-bottom: 100px;
     color: #000000;
     font-size: 1.3rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
+
 span {
     color: #E84685FF;
     font-size: 2rem;
 }
+
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -116,17 +136,20 @@ span {
     margin: 50px;
     padding-bottom: 50px;
 }
+
 .portfolio-introduction-container {
     display: block;
     text-align: center;
     width: 100%;
     color: #000000;
 }
+
 .portfolio-header {
     padding-top: 10px;
     font-size: 2.5rem;
     color: #E84685FF;
 }
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -136,30 +159,36 @@ span {
     background-color: #F6F3F38B;
     border-radius: 30px;
 }
+
 .project-title {
     font-size: 1.5rem;
     color: #E84685FF;
 }
+
 .project-image {
     border-radius: 5px;
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
-    max-width: 500px;
-    height: 350px;
+    width: 500px;
+    height: 400px;
 }
+
 .project-image:hover {
     filter: brightness(.75);
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
 }
+
 .project-description-text {
     color: #000000;
 }
+
 .project-git-link-button {
     display: flex;
     flex-wrap: wrap;
     font-size: 2.5rem;
     justify-content: space-around;
 }
+
 .contact-container {
     display: block;
     background-color: #F6F3F38B;
@@ -168,15 +197,18 @@ span {
     padding-bottom: 20px;
     padding-top: 10px;
 }
+
 .contact-title {
     text-align: center;
     width: 100%;
     color: #E84685FF;
 }
+
 .contact-text {
     text-align: center;
     color: #000000;
 }
+
 .contact-buttons-container {
     display: flex;
     flex-wrap: wrap;
@@ -185,10 +217,12 @@ span {
     justify-content: space-around;
     padding-top: 20px;
 }
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .copywrite-tag-container {
     display: block;
     text-align: center;
@@ -196,65 +230,216 @@ footer {
     margin: auto;
     color: #000000;
 }
-@media screen and (max-width: 1200px){
-    .line-1 {
+
+@media screen and (max-width: 1200px) {
+    .line-1
+    {
         font-size: 1.8rem;
     }
 }
-@media screen and (max-width: 1100px){
-    .line-1 {
+
+@media screen and (max-width: 1100px) {
+    .line-1
+    {
         font-size: 1.6rem;
     }
 }
-@media screen and (max-width: 1000px){
-    header {
+
+@media screen and (max-width: 1000px) {
+    header
+    {
         display: none;
     }
 }
+
 @media screen and (max-width: 900px) {
-    .name {
+    .name
+    {
         font-size: 2.2rem;
     }
-    .navbar-page-links-container {
+
+    .navbar-page-links-container
+    {
         font-size: 1.8rem;
+    }
 }
+
 @media screen and (max-width: 700px) {
-    .name {
+    nav
+    {
+        width: 100%;
+    }
+    .name
+    {
         font-size: 2rem;
     }
-    .navbar-page-links-container {
+
+    .navbar-page-links-container
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .padding-between-nav-main
+    {
+        padding: 10px;
+    }
+    html
+    {
+        display: flex;
+    }
+    .name
+    {
+        display: none;
+    }
+    nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-page-links-container
+    {
+        font-size: 2rem;
+    }
+    .about-section-container
+    {
+        margin: 10px;
+    }
+    .about-section-header
+    {
+        font-size: 2.5rem;
+        margin: 20px 0 10px 0;
+    }
+    .about-text
+    {
+        font-size: 1.8rem;
+        text-align: initial;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    .portfolio-container
+    {
+        margin: 10px;
+        padding: 0;
+    }
+    .padding-between-nav-main
+    {
+        padding: 10px;
+    }
+    .project-container
+    {
+        display: flex;
+    }
+    .project-title
+    {
+        font-size: 2rem;
+    }
+    .project-image
+    {
+        width: 100%;
+        height: auto;
+    }
+    .project-description-text
+    {
+
+        font-size: 1.5rem;
+        text-align: initial;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .copywrite-tag-container
+    {
+        font-size: 1rem;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar-page-links-container
+    {
         font-size: 1.4rem;
     }
-}
-@media screen and (max-width: 600px) {
-    html {
+    .name
+    {
+        display: none;
+    }
+    nav
+    {
         display: flex;
+        justify-content: center;
     }
-    nav {
-        display: flex;
-        flex-wrap: wrap;
+    .about-section-container
+    {
+        margin: 10px;
     }
-    .navbar-page-links-container {
-        font-size: 1.2rem;
-    }
-    .name {
+    .about-section-header
+    {
         font-size: 2rem;
     }
-    .portfolio-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .project-title {
-        font-size: 2rem;
-    }
-    .project-description-text {
-        text-align: justify;
+    .about-text
+    {
+        text-align: initial;
+        overflow-wrap: break-word;
+        hyphens: auto;
         font-size: 1.5rem;
     }
-    .copywrite-tag-container {
-        font-size: 1.2rem;
-        align-content: center;
+    span
+    {
+        font-size: 1.9rem;
+    }
+    .portfolio-container
+    {
+        margin: 10px;
+        padding: 0;
+    }
+    .padding-between-nav-main
+    {
+        padding: 10px;
+    }
+    .portfolio-header
+    {
+        font-size: 2rem;
+    }
+    .portfolio-container
+    {
+        margin: 0;
+    }
+    .portfolio-introduction-container
+    {
+        font-size: 2rem;
+    }
+    .project-title
+    {
+        font-size: 1.8rem;
+    }
+    .project-image
+    {
+        width: 100%;
+        height: auto;
+    }
+    .project-description-text
+    {
+        font-size: 2rem;
+        text-align: initial;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    .contact-container
+    {
+        margin: 40px 0 0 0;
+    }
+    .contact-title
+    {
+        font-size: 2rem;
+    }
+    .contact-text
+    {
+        font-size: 2rem;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 }
 
