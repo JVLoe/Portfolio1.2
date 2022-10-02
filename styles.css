@@ -33,7 +33,7 @@ nav {
 .navbar-page-links-container {
     display: flex;
     gap: 15px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 15px 5px 5px 15px;
     text-transform: uppercase;
 }
@@ -41,7 +41,7 @@ nav {
 .name {
     display: flex;
     justify-content: end;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     margin: 5px 5px 5px 0;
     color: #E84685FF;
 }
@@ -107,7 +107,7 @@ header {
 
 .about-section-header {
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     color: #E84685FF;
 }
 
@@ -115,12 +115,12 @@ header {
     text-align: initial;
     padding-bottom: 100px;
     color: #000000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 span {
     color: #E84685FF;
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 
 .portfolio-container {
@@ -142,31 +142,37 @@ span {
 
 .portfolio-header {
     padding-top: 10px;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #E84685FF;
+}
+
+.portfolio-text {
+    font-size: 1.5rem;
 }
 
 .project-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    margin: 10px;
-    padding: 20px;
+    margin: 0 0 20px 0;
     background-color: #F6F3F38B;
     border-radius: 30px;
+    width: 550px;
+    overflow: hidden;
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: #E84685FF;
+    margin: 20px;
 }
 
 .project-image {
     border-radius: 5px;
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
-    width: 500px;
-    height: 400px;
+    width: calc(100% - 5%);
+    height: calc(100%);
+    margin-left: 10px;
 }
 
 .project-image:hover {
@@ -177,13 +183,24 @@ span {
 .project-description-text {
     color: #000000;
     text-align: initial;
+    font-size: 1.3rem;
+    margin: 10px;
+    display: inline-block;
 }
 
 .project-git-link-button {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+}
+
+.project-link {
     font-size: 2.5rem;
-    justify-content: space-around;
+    display: flex;
+    justify-content: end;
+    margin: 0 20px 0 0;
+
 }
 
 .contact-container {
@@ -199,11 +216,13 @@ span {
     text-align: center;
     width: 100%;
     color: #E84685FF;
+    font-size: 2.8rem;
 }
 
 .contact-text {
     text-align: center;
     color: #000000;
+    font-size: 1.5rem;
 }
 
 .contact-buttons-container {
@@ -215,22 +234,16 @@ span {
     font-size: 2.5rem;
 }
 
-.contact-text {
-    gap: 10px;
-    font-size: 3rem;
-}
-
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.copyright-tag-container {
+.copyright-container {
     display: block;
-    text-align: center;
-    align-content: center;
     margin: auto;
     color: #000000;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -254,23 +267,26 @@ footer {
     {
         display: none;
     }
+    .about-section-header
+    {
+        font-size: 2.7rem;
+    }
 }
 @media screen and (max-width: 900px) {
-   .padding-between-nav-main
-   {
+    .padding-between-nav-main
+    {
        padding: 20px;
-   }
+    }
     .name
     {
         font-size: 2.2rem;
     }
-
     .navbar-page-links-container
     {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     nav
     {
         width: 100%;
@@ -285,6 +301,12 @@ footer {
     {
         font-size: 2.3rem;
     }
+}
+@media screen and (max-width: 700px) {
+   .about-section-container
+   {
+       margin: 10px;
+   }
     .about-section-header
     {
         font-size: 2.2rem;
@@ -296,6 +318,14 @@ footer {
     span
     {
         font-size: 2rem;
+    }
+    #about
+    {
+        padding-top: 70px;
+    }
+    #portfolio
+    {
+        padding-top: 30px;
     }
     .portfolio-container
     {
@@ -309,11 +339,6 @@ footer {
     .project-title
     {
         font-size: 2.2rem;
-    }
-    .project-image
-    {
-        width: 100%;
-        height: auto;
     }
     .project-description-text
     {
