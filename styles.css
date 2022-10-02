@@ -48,9 +48,10 @@ nav {
 
 header {
     height: calc(100vh - 15em);
-    padding: 4em;
     color: #000000;
     font-family: 'Anonymous Pro', monospace;
+    padding-top: 100px;
+
 }
 
 .line-1 {
@@ -157,6 +158,7 @@ span {
     background-color: #F6F3F38B;
     border-radius: 30px;
     width: 550px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -171,7 +173,7 @@ span {
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
     width: calc(100% - 5%);
-    height: calc(100%);
+    height: 350px;
     margin-left: 10px;
 }
 
@@ -366,6 +368,10 @@ footer {
     {
         font-size: 2rem;
     }
+    .project-image
+    {
+        height: 300px;
+    }
 }
 @media screen and (max-width: 500px) {
     .navbar-page-links-container
@@ -376,6 +382,10 @@ footer {
 @media screen and (max-width: 450px) {
     .navbar-page-links-container {
         font-size: 1.6rem;
+    }
+    .project-image
+    {
+        height: 250px;
     }
 }
 @media screen and (max-width: 400px){
