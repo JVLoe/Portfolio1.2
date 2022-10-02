@@ -360,7 +360,7 @@ footer {
     }
     .contact-container
     {
-        padding: 10px;
+        margin: 40px 10px 0 10px;
     }
     .contact-title
     {
@@ -368,7 +368,8 @@ footer {
     }
     .contact-text
     {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin: 10px;
     }
     .copyright-text
     {
@@ -439,10 +440,6 @@ footer {
     .portfolio-container
     {
         margin: 0;
-    }
-    .contact-container
-    {
-        margin: 40px 15px 0 15px;
     }
     @media screen and (max-width: 370px) {
         .navbar-page-links-container
