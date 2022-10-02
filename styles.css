@@ -90,9 +90,21 @@ header {
 }
 
 #about,
-#portfolio {
+#portfolio,
+#contact {
     z-index: 0;
-    padding-top: 70px;
+}
+
+#about {
+    padding-top: 85px;
+}
+
+#portfolio {
+    padding-top: 55px;
+}
+
+#contact {
+    padding-top: 50px;
 }
 
 .about-section-container {
@@ -362,6 +374,13 @@ footer {
     {
         font-size: 1rem;
     }
+    #about
+    {
+        padding-top: 75px;
+    }
+    #portfolio {
+        padding-top: 80px;
+    }
 }
 @media screen and (max-width: 600px) {
     .navbar-page-links-container
@@ -386,6 +405,17 @@ footer {
     .project-image
     {
         height: 250px;
+    }
+    #about {
+        padding-top: 60px;
+    }
+
+    #portfolio {
+        padding-top: 65px;
+    }
+
+    #contact {
+        padding-top: 40px;
     }
 }
 @media screen and (max-width: 400px){
