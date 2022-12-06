@@ -8,7 +8,7 @@ html {
     font-weight: bolder;
     overflow-wrap: break-word;
     hyphens: auto;
-    background-image: url("./Assets/pexels-eberhard-grossgasteiger-2088205.jpg");
+    background-image: url("assets/pexels-eberhard-grossgasteiger-2088205.jpg");
 }
 
 a:link, a:visited {
