@@ -8,7 +8,7 @@ html {
     font-weight: bolder;
     overflow-wrap: break-word;
     hyphens: auto;
-    background-image: url("assets/pexels-eberhard-grossgasteiger-2088205.jpg");
+    background: url("assets/pexels-eberhard-grossgasteiger-2088205.jpg") no-repeat fixed;
 }
 
 a:link, a:visited {
@@ -47,11 +47,10 @@ nav {
 }
 
 header {
-    height: calc(100vh - 30em);
+    height: calc(100vh - 25em);
     color: #000000;
     font-family: 'Anonymous Pro', monospace;
     padding-top: 100px;
-
 }
 
 .line-1 {
@@ -405,6 +404,7 @@ footer {
     .project-image {
         height: 300px;
     }
+
     .contact-buttons-container {
         gap: 10px;
     }
