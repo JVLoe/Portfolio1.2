@@ -8,7 +8,7 @@ html {
     font-weight: bolder;
     overflow-wrap: break-word;
     hyphens: auto;
-    background-image: url("assets/pexels-eberhard-grossgasteiger-2088205.jpg");
+    background: url("assets/pexels-eberhard-grossgasteiger-2088205.jpg") no-repeat fixed;
 }
 
 a:link, a:visited {
@@ -47,11 +47,10 @@ nav {
 }
 
 header {
-    height: calc(100vh - 15em);
+    height: calc(100vh - 25em);
     color: #000000;
     font-family: 'Anonymous Pro', monospace;
     padding-top: 100px;
-
 }
 
 .line-1 {
@@ -131,7 +130,7 @@ header {
     font-size: 1.7rem;
 }
 
-span {
+.about-text-highlight {
     color: #E84685FF;
     font-size: 2.1rem;
 }
@@ -146,7 +145,7 @@ span {
     padding-bottom: 50px;
 }
 
-.portfolio-introduction-container {
+.portfolio-title {
     display: block;
     text-align: center;
     width: 100%;
@@ -166,7 +165,7 @@ span {
 .project-container {
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0;
     background-color: #F6F3F38B;
     border-radius: 30px;
     width: 550px;
@@ -186,7 +185,7 @@ span {
     transition: all ease-in-out .2s;
     width: calc(100% - 5%);
     height: 350px;
-    margin-left: 10px;
+    margin-left: 17px;
 }
 
 .project-image:hover {
@@ -199,22 +198,34 @@ span {
     text-align: initial;
     font-size: 1.3rem;
     margin: 10px;
-    display: inline-block;
+    display: block;
+    height: 100px;
 }
 
-.project-git-link-button {
-    display: inline-block;
+.github-link-container {
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 10px;
+    position: relative;
+    justify-content: flex-end;
 }
 
 .project-link {
     font-size: 2.5rem;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
     display: flex;
-    justify-content: end;
-    margin: 0 20px 0 0;
+    flex-direction: column;
+    gap: 10px;
+}
 
+
+.project-github-icon {
+    font-size: 1rem;
+    position: relative;
+    transform: translate(-10%, 10%);
 }
 
 .contact-container {
@@ -231,12 +242,6 @@ span {
     width: 100%;
     color: #E84685FF;
     font-size: 2.8rem;
-}
-
-.contact-text {
-    text-align: center;
-    color: #000000;
-    font-size: 1.5rem;
 }
 
 .contact-buttons-container {
@@ -261,152 +266,165 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    .line-1
-    {
+    .line-1 {
         font-size: 1.8rem;
     }
 }
+
 @media screen and (max-width: 1100px) {
-    .line-1
-    {
+    .line-1 {
         font-size: 1.6rem;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    .padding-between-nav-main
-    {
+    .padding-between-nav-main {
         padding: 15px;
     }
-    header
-    {
+
+    header {
         display: none;
     }
-    .about-section-header
-    {
+
+    .about-section-header {
         font-size: 2.7rem;
     }
 }
+
 @media screen and (max-width: 900px) {
-    .padding-between-nav-main
-    {
-       padding: 20px;
+    .padding-between-nav-main {
+        padding: 20px;
     }
-    .name
-    {
+
+    .name {
         font-size: 2.2rem;
     }
-    .navbar-page-links-container
-    {
+
+    .navbar-page-links-container {
         font-size: 1.9rem;
     }
+
+    .contact-buttons-container {
+        gap: 10px;
+    }
 }
+
 @media screen and (max-width: 750px) {
-    nav
-    {
+    nav {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .name
-    {
+
+    .name {
         display: none;
     }
-    .navbar-page-links-container
-    {
+
+    .navbar-page-links-container {
         font-size: 2.3rem;
     }
+
+    .contact-buttons-container {
+        gap: 10px;
+    }
 }
+
 @media screen and (max-width: 700px) {
-   .about-section-container
-   {
-       margin: 10px;
-   }
-    .about-section-header
-    {
+    .about-section-container {
+        margin: 10px;
+    }
+
+    .about-section-header {
         font-size: 2.2rem;
     }
-    .about-text
-    {
+
+    .about-text {
         font-size: 1.5rem;
     }
-    span
-    {
+
+    span {
         font-size: 2rem;
     }
-    #about
-    {
+
+    #about {
         padding-top: 70px;
     }
-    #portfolio
-    {
+
+    #portfolio {
         padding-top: 30px;
     }
-    .portfolio-container
-    {
+
+    .portfolio-container {
         margin: 10px;
         padding: 0;
     }
-    .padding-between-nav-main
-    {
+
+    .padding-between-nav-main {
         padding: 10px;
     }
-    .project-title
-    {
+
+    .project-title {
         font-size: 2.2rem;
     }
-    .project-description-text
-    {
+
+    .project-description-text {
         font-size: 1.5rem;
     }
-    .contact-container
-    {
+
+    .contact-container {
         margin: 40px 10px 0 10px;
     }
-    .contact-title
-    {
+
+    .contact-buttons-container {
+        gap: 10px;
+    }
+
+    .contact-title {
         font-size: 2.2rem;
     }
-    .contact-text
-    {
-        font-size: 1.3rem;
-        margin: 10px;
-    }
-    .copyright-text
-    {
+
+    .copyright-text {
         font-size: 1rem;
     }
-    #about
-    {
+
+    #about {
         padding-top: 75px;
     }
+
     #portfolio {
         padding-top: 80px;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .navbar-page-links-container
-    {
+    .navbar-page-links-container {
         font-size: 2rem;
     }
-    .project-image
-    {
+
+    .project-image {
         height: 300px;
     }
+
+    .contact-buttons-container {
+        gap: 10px;
+    }
 }
+
 @media screen and (max-width: 500px) {
-    .navbar-page-links-container
-    {
+    .navbar-page-links-container {
         font-size: 1.7rem;
     }
 }
+
 @media screen and (max-width: 450px) {
     .navbar-page-links-container {
         font-size: 1.6rem;
     }
-    .project-image
-    {
+
+    .project-image {
         height: 250px;
     }
+
     #about {
         padding-top: 60px;
     }
@@ -419,31 +437,31 @@ footer {
         padding-top: 40px;
     }
 }
-@media screen and (max-width: 400px){
-    .navbar-page-links-container
-    {
+
+@media screen and (max-width: 400px) {
+    .navbar-page-links-container {
         font-size: 1.4rem;
     }
-    .about-section-container
-    {
+
+    .about-section-container {
         margin: 10px;
     }
-    .portfolio-container
-    {
+
+    .portfolio-container {
         margin: 10px;
         padding: 0;
     }
-    .padding-between-nav-main
-    {
+
+    .padding-between-nav-main {
         padding: 10px;
     }
-    .portfolio-container
-    {
+
+    .portfolio-container {
         margin: 0;
     }
+
     @media screen and (max-width: 370px) {
-        .navbar-page-links-container
-        {
+        .navbar-page-links-container {
             font-size: 1.3rem;
         }
     }
