@@ -158,6 +158,16 @@ header {
     color: #E84685FF;
 }
 
+.portfolio-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: 20px;
+}
+
 .portfolio-text {
     font-size: 1.5rem;
 }
@@ -178,20 +188,46 @@ header {
     color: #E84685FF;
     margin: 20px;
 }
+.project-image-container {
+    padding: 1px;
+    position: relative;
+}
 
 .project-image {
     border-radius: 5px;
-    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    box-shadow: 0 4px 6px 0 #465e72;
     transition: all ease-in-out .2s;
     width: calc(100% - 5%);
     height: 350px;
-    margin-left: 17px;
+    margin-left: 15px;
 }
 
 .project-image:hover {
-    filter: brightness(.75);
-    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+    filter: brightness(.85);
+    box-shadow: 0 8px 12px 0 #eeedf099;
+
 }
+
+.hover-text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.project-image:hover ~ .hover-text {
+    visibility: visible;
+}
+
+.project-image ~ .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
 
 .project-description-text {
     color: #000000;
