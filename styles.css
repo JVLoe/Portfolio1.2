@@ -228,6 +228,10 @@ header {
     transform: translate(-10%, 10%);
 }
 
+.academy-portal-github-link {
+    top: 40px;
+}
+
 .contact-container {
     display: block;
     background-color: #F6F3F38B;
@@ -253,6 +257,25 @@ header {
     font-size: 2.5rem;
 }
 
+.academy-portal-access-container {
+    position: relative;
+}
+
+.academy-portal-access {
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.academy-portal-github-link {
+    position: relative;
+    transform: translate(0%, -60%);
+}
+
+.accordion-github-link {
+    transform: translate(0%, 80%);
+}
+
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -268,6 +291,9 @@ footer {
 @media screen and (max-width: 1200px) {
     .line-1 {
         font-size: 1.8rem;
+    }
+    .accordion-github-link {
+        transform: translate(0%, 0%);
     }
 }
 
@@ -394,6 +420,19 @@ footer {
     #portfolio {
         padding-top: 80px;
     }
+    .academy-portal-project-container {
+        position: relative;
+    }
+
+    .academy-portal-access {
+        margin: 5px;
+    }
+
+    .academy-portal-access-container {
+        position: absolute;
+        bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -463,6 +502,12 @@ footer {
     @media screen and (max-width: 370px) {
         .navbar-page-links-container {
             font-size: 1.3rem;
+        }
+        .project-description-text {
+            font-size: 1.3rem;
+        }
+        .academy-portal-access {
+            font-size:0.9rem;
         }
     }
 }
